@@ -1,22 +1,23 @@
+import "../styles/AttendeeCard.css"
+
 function AttendeeCard(
-     {
-        AttendeeCard,
+    {
+        attendee,
         onToggleStatus,
     }
-
 ) {
     return (
-        <div className="card">
+        <div className="attendee-card">
 
             <h3>{attendee.name}</h3>
-            <p>{attendee.role}</p>
+            <p className="attendee-role">{attendee.role}</p>
 
-            <p>
+            <p className="attendee-status">
                 Status:
                 {" "}
                 <strong>
                     {
-                        attendee.registered 
+                        attendee.registered
                         ? "Registered"
                         : "Cancelled"
                     }
@@ -24,6 +25,12 @@ function AttendeeCard(
             </p>
 
             <button
+                className={`attendee-button
+                    ${attendee.registered
+                    ? "registered-button"
+                    : "cancelled-button"
+                    } 
+                `}
                 onClick={() => onToggleStatus(attendee.id)}
             >
                 {
@@ -37,4 +44,3 @@ function AttendeeCard(
 }
 
 export default AttendeeCard;
-   

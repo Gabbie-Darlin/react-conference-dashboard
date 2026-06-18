@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import AttendeeList from "./components/AttendeeList";
+import "./styles/App.css";
 
 function App() {
     return (

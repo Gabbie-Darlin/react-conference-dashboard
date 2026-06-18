@@ -1,0 +1,74 @@
+.attendee-card {
+    background: white;
+
+    padding: 1.5rem;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+.attendee-card:hover {
+    transform: translateY(-4px);
+}
+
+.attendee-card h3 {
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.attendee-role {
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.attendee-status {
+    margin-bottom: 1rem;
+}
+
+.status-registered {
+    color: #059669;
+    font-weight: 600;
+}
+
+.status-cancelled {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+.attendee-button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.registered-button {
+    background: #dc2626;
+    color: white;
+}
+
+.registered-button:hover {
+    background: #b91c1c;
+}
+
+.cancelled-button {
+    background: #2563eb;
+    color: white;
+}
+
+.cancelled-button:hover {
+    background: #1d4ed8;
+}
