@@ -1,0 +1,87 @@
+.sessions-section {
+    margin-top: 3rem;
+}
+
+.sessions-title {
+    margin-bottom: 1.5rem;
+    color: #111827;
+}
+
+.sessions-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,
+            minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+.session-card {
+    background: white;
+
+    padding: 1.5rem;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+.session-card:hover {
+    transform: translateY(-4px);
+}
+
+.session-card h3 {
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.session-card p {
+    color: #6b7280;
+    margin-bottom: 0.75rem;
+}
+
+.register-session-btn {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.register-session-btn:hover {
+    background: #1d4ed8;
+}
+
+.registered-session-btn {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #059669;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}

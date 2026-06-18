@@ -1,0 +1,48 @@
+.speaker-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.speaker-card:hover {
+  transform: translateY(-4px);
+}
+
+.speaker-topic {
+  font-weight: 600;
+}
+
+.speaker-status {
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+.available {
+  color: #059669;
+}
+
+.unavailable {
+  color: #dc2626;
+}
+
+.available-btn,
+.unavailable-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.available-btn {
+  background-color: #2563eb;
+}
+
+.unavailable-btn {
+  background-color: #dc2626;
+}
